@@ -15,7 +15,7 @@ BTB9 is an advanced automated trading bot designed to trade cryptocurrencies on 
 ---
 
 ## Demo
-![Trading Bot Screenshot](./assets/demo.png)
+![Trading Bot Screenshot]([./assets/demo.png](https://github.com/ChuckNadi/B-Trading-Bot/blob/main/Screenshot%202024-11-06%20081859.png))
 
 ---
 
