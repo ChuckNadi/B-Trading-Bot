@@ -12,14 +12,15 @@ import time
 from binance.exceptions import BinanceAPIException
 import logging
 #logging.basicConfig(level=logging.INFO)
-logging.basicConfig(filename="C:\\Users\\charl\\Desktop\\wbb.log", level=logging.INFO,
+logging.basicConfig(filename="file path\wbb.log", level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
 import json
 import requests
 import matplotlib.pyplot as plt
 
-api_key = os.getenv('BINANCE_API_KEY')
-api_secret = os.getenv('BINANCE_API_SECRET')
+#Call from ev
+api_key = os.getenv('API_KEY')
+api_secret = os.getenv('API_SECRET')
 client = Client(api_key, api_secret, tld='us')
 
 class TradingBot:
@@ -48,7 +49,7 @@ class TradingBot:
     self.prices = {}
     self.bought_orders = {} 
     self.highest_prices = {} 
-    self.state_file = "C:\\Users\\charl\\Desktop\\trading_bot_state.json"  # Choose an appropriate file path
+    self.state_file = ""  # Choose an appropriate file path
     self.load_state()    
     self.highest_since_buy = {} 
 
